@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import SearchBar from "./components/SearchBar";
 import ImageGrid from "./components/ImageGrid";
+// import React, { useRef, useState } from "react";
 
 const App = () => {
   return (
