@@ -1,7 +1,13 @@
-import "./App.css";
+import React, { useState } from "react";
+import SearchBar from "./components/SearchBar";
 
-function App() {
-  return <></>;
-}
+const App = () => {
+  return (
+    <div>
+      
+      <SearchBar />
+    </div>
+  );
+};
 
 export default App;
