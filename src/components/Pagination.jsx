@@ -1,7 +1,14 @@
-import React from "react";
+import { Button } from "react-bootstrap";
 
-const Pagination = () => {
-  return <div></div>;
+const Pagination = ({ page, totalPages, setPage }) => {
+  return (
+    <div className="buttons">
+      {page > 1 && <Button onClick={() => setPage(page - 1)}>Previous</Button>}
+      {page < totalPages && (
+        <Button onClick={() => setPage(page + 1)}>Next</Button>
+      )}
+    </div>
+  );
 };
 
 export default Pagination;

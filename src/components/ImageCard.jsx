@@ -1,7 +1,13 @@
-import React from "react";
-
 const ImageCard = ({ image }) => {
-  return <></>;
+  return (
+    <>
+      <img
+        src={image.urls.small}
+        alt={image.alt_description}
+        className="image"
+      />
+    </>
+  );
 };
 
 export default ImageCard;

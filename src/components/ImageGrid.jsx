@@ -1,9 +1,13 @@
-import React from "react";
+import ImageCard from "./ImageCard";
 
-const ImageGrid = () => {
+const ImageGrid = ({ images }) => {
   return (
     <>
-      <div className=""></div>
+      <div className="images">
+        {images.map((image) => (
+          <ImageCard key={image.id} image={image} />
+        ))}
+      </div>
     </>
   );
 };
