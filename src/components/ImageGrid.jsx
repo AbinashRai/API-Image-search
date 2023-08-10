@@ -1,11 +1,9 @@
 import React from "react";
 
-const ImageGrid = ({ images }) => {
+const ImageGrid = () => {
   return (
     <>
-      <div className="images">
-        
-      </div>
+      <div className=""></div>
     </>
   );
 };
