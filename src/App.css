@@ -187,3 +187,13 @@ h1 {
 .animation-pulse {
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
+
+/* css for post */
+.post {
+  background-color: blue;
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 5px 2px;
+}
