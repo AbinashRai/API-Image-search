@@ -8,7 +8,6 @@ const URL = "https://api.unsplash.com/search/photos";
 const ImgPerPage = 20;
 
 const SearchBar = () => {
-  console.log(process.env.REACT_APP_API_KEY);
   const searchInput = useRef(null);
   const [images, setImages] = useState([]);
   const [page, setPage] = useState(1);
@@ -41,7 +40,6 @@ const SearchBar = () => {
 
   const handleSearch = (event) => {
     event.preventDefault();
-    console.log(searchInput.current.value);
     loadImages();
     resetSearch();
   };
